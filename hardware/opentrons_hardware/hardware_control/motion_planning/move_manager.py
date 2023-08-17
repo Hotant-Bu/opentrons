@@ -1,8 +1,8 @@
 """Move manager."""
 import logging
 from typing import List, Tuple, Generic
-from opentrons_hardware.hardware_control.motion_planning import move_utils
-from opentrons_hardware.hardware_control.motion_planning.types import (
+from hardware.opentrons_hardware.hardware_control.motion_planning import move_utils
+from hardware.opentrons_hardware.hardware_control.motion_planning.types import (
     Coordinates,
     Move,
     MoveTarget,

@@ -11,11 +11,11 @@ import argparse
 from logging.config import dictConfig
 from typing import TextIO, Optional
 
-from opentrons_hardware.drivers.can_bus import build, CanMessenger
-from opentrons_hardware.drivers.can_bus.abstract_driver import AbstractCanDriver
+from hardware.opentrons_hardware.drivers.can_bus import build, CanMessenger
+from hardware.opentrons_hardware.drivers.can_bus.abstract_driver import AbstractCanDriver
 
-from opentrons_hardware.firmware_bindings.message import CanMessage
-from opentrons_hardware.scripts.can_args import add_can_args, build_settings
+from hardware.opentrons_hardware.firmware_bindings.message import CanMessage
+from hardware.opentrons_hardware.scripts.can_args import add_can_args, build_settings
 
 from .can_mon import task as monitor_task
 from .can_comm import prompt_message, InvalidInput

@@ -7,19 +7,19 @@ from opentrons_shared_data.errors.exceptions import (
     RoboticsControlError,
     CommandTimedOutError,
 )
-from opentrons_hardware.drivers.can_bus.can_messenger import (
+from hardware.opentrons_hardware.drivers.can_bus.can_messenger import (
     CanMessenger,
     WaitableCallback,
     MultipleMessagesWaitableCallback,
 )
-from opentrons_hardware.firmware_bindings.messages.message_definitions import (
+from hardware.opentrons_hardware.firmware_bindings.messages.message_definitions import (
     MotorPositionRequest,
     MotorPositionResponse,
     UpdateMotorPositionEstimationRequest,
     UpdateMotorPositionEstimationResponse,
 )
-from opentrons_hardware.firmware_bindings.arbitration_id import ArbitrationId
-from opentrons_hardware.firmware_bindings.constants import (
+from hardware.opentrons_hardware.firmware_bindings.arbitration_id import ArbitrationId
+from hardware.opentrons_hardware.firmware_bindings.constants import (
     NodeId,
     MessageId,
     MotorPositionFlags,

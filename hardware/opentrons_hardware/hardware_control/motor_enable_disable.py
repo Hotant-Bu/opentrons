@@ -1,12 +1,12 @@
 """Utilities for updating the enable/disable state of an OT3 axis."""
 from typing import Set
 import logging
-from opentrons_hardware.drivers.can_bus.can_messenger import CanMessenger
-from opentrons_hardware.firmware_bindings.messages.message_definitions import (
+from hardware.opentrons_hardware.drivers.can_bus.can_messenger import CanMessenger
+from hardware.opentrons_hardware.firmware_bindings.messages.message_definitions import (
     EnableMotorRequest,
     DisableMotorRequest,
 )
-from opentrons_hardware.firmware_bindings.constants import NodeId, ErrorCode
+from hardware.opentrons_hardware.firmware_bindings.constants import NodeId, ErrorCode
 
 log = logging.getLogger(__name__)
 
