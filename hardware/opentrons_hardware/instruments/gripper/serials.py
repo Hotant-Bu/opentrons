@@ -7,7 +7,7 @@ from opentrons_shared_data.errors.exceptions import (
     InvalidInstrumentData,
     PythonException,
 )
-from opentrons_hardware.instruments.serial_utils import ensure_serial_length
+from hardware.opentrons_hardware.instruments.serial_utils import ensure_serial_length
 
 # Separate string into 2 groups
 #  - model
